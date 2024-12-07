@@ -7,7 +7,6 @@ import Navbar from './components/Navbar'
 import Footter from './components/Footter'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>

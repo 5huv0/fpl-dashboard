@@ -4,17 +4,15 @@ import './index.css'
 import App from './App.jsx'
 import { createBrowserRouter, createRoutesFromElements, Route, Router, RouterProvider } from 'react-router-dom'
 import Home from './components/Home.jsx'
-import Navbar from './components/Navbar.jsx'
 import About from './components/About.jsx'
-import Footter from './components/Footter.jsx'
+import Contact from './components/Contact.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path = "/" element={<App/>}>
+    <Route path = '/' element={<App/>}>
       <Route path='' element={<Home/>} />
-      <Route path='' element={<Navbar/>} />
-      <Route path='' element={<About/>} />
-      <Route path='' element={<Footter/>} />
+      <Route path='about' element={<About/>} />
+      <Route path='contact' element={<Contact/>} />
     </Route>
   )
 )
