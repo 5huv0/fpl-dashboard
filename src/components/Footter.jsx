@@ -9,6 +9,7 @@ export default function Footter() {
                 contact with me through this email
             </p>
             <p>xyz@gmail.com</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
         </div>
         <div className='flex flex-col gap-4'>
             <Link to='#'>

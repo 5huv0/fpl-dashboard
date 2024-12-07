@@ -15,19 +15,19 @@ export default function Navbar() {
 
        <div className='flex gap-4 '>
 
-        <NavLink to="" className="hover:text-white">
+        <NavLink to="" className="hover:text-white hover:underline">
             Home
         </NavLink>
 
-        <NavLink to="about" className="hover:text-white">
+        <NavLink to="about" className="hover:text-white hover:underline">
             About
         </NavLink>
 
-        <NavLink to="contact" className="hover:text-white">
+        <NavLink to="contact" className="hover:text-white hover:underline">
             Contact
         </NavLink>
 
-        <NavLink to="#" className="hover:text-white px-3">
+        <NavLink to="#" className="hover:text-white px-3 hover:underline">
              About
         </NavLink>
 
