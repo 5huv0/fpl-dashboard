@@ -1,33 +1,88 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
-export default function Footter() {
+export default function Footer() {
   return (
-    <footer className='bg-blue-700 py-10 px-10 flex flex-row gap-40 justify-around'>
-        <div>
-            <p>
-                contact with me through this email
-            </p>
-            <p>xyz@gmail.com</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
+    <div className='bg-slate-500 w-full bottom-0 flex justify-around'>
+      <div className='flex flex-col items-start'>
+        <p className='font-bold font-mono text-black text-4xl p-3'>
+            FPL Leagues
+        </p>
+        <div className='flex '> {/* This is linkings part*/}
+                <button className='hover:bg-green-200 rounded-full w-16 h-8 justify-center flex transition ease-in-out delay-100'>
+                    <Link
+                      to="https://github.com/5huv0"
+                    >
+                      <img src="/images/github-logo.png" alt="" />
+                    </Link>
+                </button>
+                <button className='hover:bg-green-200 rounded-full w-16 h-8 justify-center flex transition ease-in-out delay-100'>
+                    <Link
+                      to="https://www.facebook.com/share/1DSDLmcNCB/"
+                    >
+                      <img src="/images/fb-logo.png" alt="" />
+                    </Link>
+                </button>
+                <button className='hover:bg-green-200 rounded-full w-16 h-8 justify-center flex transition ease-in-out delay-100'>
+                    <Link
+                      to="https://www.instagram.com/5huv_0?igsh=ZDVuMm0wOTBtMnln"
+                    >
+                      <img src="/images/insta-logo.png" alt="" />
+                    </Link>
+                </button>
+                <button className='hover:bg-green-200 rounded-full w-16 h-8 justify-center flex transition ease-in-out delay-100'>
+                    <Link
+                      to="https://x.com/MdShuvo76030551?t=EYDUmqMZbLgsENpAbjW4Kw&s=09"
+                    >
+                      <img src="/images/twitter-logo.png" alt="" />
+                    </Link>
+                </button>
+                <button className='hover:bg-green-200 rounded-full w-16 h-8 justify-center flex transition ease-in-out delay-100'>
+                    <Link
+                      to="mailto: md88748874@gmail.com"
+                    >
+                      <img src="/images/gmail-logo.png" alt="" />
+                    </Link>
+                </button>
         </div>
-        <div className='flex flex-col gap-4'>
-            <Link to='#'>
-                Leagues
-            </Link>
-
-            <Link to='#'>
-                Leagues
-            </Link>
-
-            <Link to='#'>
-                Leagues
-            </Link>
-
-            <Link to='#'>
-                Leagues
-            </Link>
+        <p className='font-thin font-mono text-black text-xs p-3'>
+            All Right Reserve @5huv0
+        </p>
+      </div>
+      <div>
+        <div className='flex flex-col font-bold font-mono p-3 m-2'> {/* This is buttons section */}
+            <NavLink
+                to="/rizzgen"
+                className=' text-black  rounded-xl hover:underline'
+                >
+                Top of the Week
+                </NavLink>
+                <NavLink
+                to="/favourites"
+                className=' text-black  rounded-xl hover:underline'
+                >
+                Top of the season
+                </NavLink>
+                <NavLink
+                to="/addrizz"
+                className=' text-black  rounded-xl hover:underline'
+                >
+                PL Table
+                </NavLink>
+                <NavLink
+                to="/features"
+                className=' text-black  rounded-xl hover:underline'
+                >
+                 League Table
+                </NavLink>
+                <NavLink
+                to="/contacts"
+                className=' text-black rounded-xl hover:underline'
+                >
+                Contacts
+            </NavLink>
         </div>
-    </footer>
+      </div>
+    </div>
   )
 }
