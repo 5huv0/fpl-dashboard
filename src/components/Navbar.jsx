@@ -4,7 +4,7 @@ import {Link, NavLink} from 'react-router-dom'
 export default function Navbar() {
   return (
     <nav className='bg-red-600 flex flex-row justify-between'>
-       <div className='flex gap-6'>
+       <div className='flex gap-6 justify-center items-center'>
             <Link to="/">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXJFgaMD84uTvZG3La1pjYzKtvwy7oI-Nn6g&s" alt="" className='size-20'/>
             </Link>
@@ -13,7 +13,7 @@ export default function Navbar() {
             </p>
        </div>
 
-       <div className='flex gap-4 '>
+       <div className='flex gap-4 justify-center items-center'>
 
         <NavLink to="" className="hover:text-white hover:underline">
             Home
