@@ -3,25 +3,25 @@ import React from "react";
 export default function Home(){
     return(
         <div className="flex">
-            <div className="flex1 bg-slate-700">
-            flex1
+            <div className="bg-yellow-400 h-screen w-4/12">
+                Total LeaderBoard
             </div>
-            <div className="flex2 bg-gray-200">flex2
-                <div className="flex3 bg-green-600">flex3
-                    <div className="flex5 bg-red-600">flex5
-                        <div className="flex7 bg-blue-700">
-                            flex7
+            <div className="h-screen w-8/12 flex flex-col">
+                <div className="h-4/6 flex flex-row">
+                    <div className="w-7/12 flex flex-col">
+                        <div className="bg-slate-500 h-4/6">
+                            Player of the week
                         </div>
-                        <div className="flex8 bg-orange-500">
-                            flex8
+                        <div className="bg-orange-950 h-2/6">
+                            Average Point of the gameweek
                         </div>
                     </div>
-                    <div className="flex6 bg-yellow-400">
-                        flex6
+                    <div className="bg-blue-700 w-5/12">
+                        Top of the Week
                     </div>
                 </div>
-                <div className="flex4 bg-emerald-500">
-                    flex4
+                <div className="h-2/6 bg-red-600">
+                    Total team & Avg points Total & Total points
                 </div>
             </div>
         </div>
