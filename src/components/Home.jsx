@@ -20,7 +20,7 @@ export default function Home(){
                         Top of the Week
                     </div>
                 </div>
-                <div className="h-2/6 bg-red-600">
+                <div className="h-2/6 bg-green-600">
                     Total team & Avg points Total & Total points
                 </div>
             </div>
