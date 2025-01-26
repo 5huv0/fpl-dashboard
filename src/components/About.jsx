@@ -2,8 +2,74 @@ import React from 'react'
 
 export default function About() {
   return (
-    <div className='m-5'>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, explicabo fugit sequi assumenda facere aliquam? Vero alias corporis maxime minus laboriosam accusantium odio sapiente nesciunt rerum qui, eum deleniti quisquam sed quos quam doloremque eligendi sint obcaecati odit, commodi ad amet ducimus sunt pariatur. Ab iure accusantium repellendus obcaecati quae ipsum quidem consequuntur qui porro consequatur, molestias ipsa ut animi deleniti exercitationem amet mollitia. Architecto aliquid ut ullam fugit, quos unde modi velit consequatur facere voluptas expedita accusamus. Magni animi provident molestias id ullam necessitatibus aperiam consequatur veritatis iusto reprehenderit nobis, facilis error voluptatibus non ratione praesentium tenetur fugiat excepturi fugit rerum impedit neque! Officiis, temporibus in minus aut magni et hic exercitationem consectetur nesciunt sequi natus saepe ab. Ut enim deserunt incidunt et, blanditiis omnis voluptate quisquam porro. Voluptatem accusantium doloribus natus labore soluta corporis repellendus ullam consequatur, tempore neque debitis amet saepe sapiente nulla, quisquam, illum quasi porro reiciendis fugit nemo? Asperiores recusandae perspiciatis sunt explicabo, debitis temporibus eius ipsam dignissimos aperiam reiciendis numquam. Numquam facere voluptatum dolorum recusandae rerum temporibus ducimus enim cupiditate expedita non dolorem, tempore nam quia distinctio mollitia inventore fugit placeat vitae quis, quod quibusdam vero dolores? Ullam ab quae quibusdam, repellat ea dolorem nemo placeat nulla ut magnam autem aut? Maxime nihil non expedita, earum officia atque ratione nam dolore? Praesentium ad consectetur corrupti odit odio? Natus illo aspernatur odit veritatis magni eum ullam ipsam magnam optio nisi nulla dicta quos voluptatem ducimus totam impedit voluptate saepe, tenetur, cum nesciunt facilis earum vel perspiciatis voluptatum. Libero officia cumque quasi provident, dolorum ratione sapiente modi totam odio quam deleniti in explicabo nobis vero ab quae, quis ea vitae! Doloribus, fuga, unde veritatis incidunt voluptatum architecto cum ea impedit vel dicta distinctio deleniti, quia quo? Cupiditate sunt asperiores ad natus odio repellendus ex error quasi sint laudantium distinctio quisquam quo facilis, qui cum reprehenderit hic accusamus consequuntur molestias veniam aut rerum dolorem earum nostrum? Porro consequatur beatae eligendi repellendus quis nulla iusto quidem tempore, aut ab animi sapiente. Corporis iste exercitationem tempora consequatur dolor veniam recusandae corrupti voluptatibus ratione saepe eum a consequuntur ducimus et, perferendis rem error eius eligendi expedita magnam fugiat perspiciatis aliquam itaque. Asperiores deleniti atque pariatur expedita eligendi eius architecto sunt, facere nulla ipsum ipsa similique, ducimus laborum sit eaque consequatur id. Exercitationem rerum inventore nemo molestiae maiores, neque repellendus dolore. Velit saepe magnam consequatur perspiciatis incidunt odio voluptatem qui suscipit ea repellat nobis quae nam, dolorem reiciendis. Asperiores tempore suscipit magnam tenetur blanditiis earum minus delectus, hic deserunt provident nemo laboriosam optio labore nihil. Provident explicabo quibusdam sit quam tempore? Officiis laudantium vero iste a inventore odio sint facere illum suscipit velit cum blanditiis alias hic aperiam, ipsa reprehenderit id beatae incidunt. Neque tenetur, modi laboriosam laudantium illo nihil accusantium reprehenderit ea deserunt! In ipsam sequi iure esse ad eos deleniti modi fuga totam quia incidunt ab, itaque maxime placeat quam explicabo libero odio sint nulla aperiam. Error aperiam enim totam. Rem tempora, est inventore harum ratione ab! Ex maxime tempora autem itaque cupiditate iusto id asperiores amet placeat. Quo laudantium, vero adipisci eaque, eligendi praesentium ipsa consequatur odit doloremque aliquid magnam voluptatem. Voluptatem perferendis provident labore, alias totam accusantium delectus nulla, quaerat voluptatum modi deleniti veniam praesentium, maxime ut. Eum nemo eveniet dolorem error iste architecto incidunt explicabo sequi consectetur. Nihil laudantium praesentium facere dolorum, dolores labore vel delectus hic eos quae quisquam incidunt sapiente rerum excepturi. Voluptatum minima sequi assumenda magnam, ea numquam voluptatibus in soluta temporibus est vel accusamus dolor nobis. Necessitatibus, cum labore. Quis voluptas, dolorum quaerat nemo tenetur aspernatur itaque, rerum ullam doloremque, molestiae quam?</p>
+    <div className='m-5 font-mono'>
+      <div className='p-5 '>
+        <p className='font-extrabold text-5xl underline text-red-600'>
+        About FPL Leagues:
+        </p>
+        <p className='font-bold text-wrap text-xl'>
+          Welcome to FPL Leagues, your ultimate hub for all things Fantasy Premier League! Our platform is designed to bring together FPL enthusiasts from around the world, offering tools, insights, and community features to enhance your fantasy football experience.
+        </p>
+        <p className='font-bold text-wrap text-xl'>
+          <p className='underline text-red-600'>What Makes Us Unique?</p>
+          At FPL Leagues, we go beyond just stats and scores. Here is what sets us apart:
+
+          Insights You Can Trust
+          Stay ahead of the game with detailed player and team analysis, weekly highlights, and expert tips that help you make informed decisions for your squad.
+
+          Live League Tracking
+          Compete with your friends, family, and rivals in custom leagues! Track league tables, player performances, and team standings in real-time.
+
+          Top Performers and Trends
+          Explore the week is top-performing players, season-long must-haves, and emerging trends to stay competitive throughout the FPL season.
+
+          Interactive Community
+          Join our growing community of FPL enthusiasts. Share tips, debate strategies, celebrate your wins, and discuss everything from transfers to captain picks.
+
+          Easy Navigation
+          With a clean and intuitive design, we make it simple to explore league tables, analyze data, and access resources—because your time is best spent building a winning team.
+        </p>
+      </div>
+
+      <div className='p-5'>
+        <p className='font-extrabold text-5xl underline text-red-600'>
+        What We Offer:
+        </p>
+        <p className=' text-wrap text-lg '>
+          <p className='underline'>Weekly Highlights:</p> Stay updated with the biggest moments from every gameweek:
+          Top-performing players across all positions.
+          Breakthrough stars and rising assets.
+          Game-changing captaincy picks and differential players to boost your rankings.
+          <p className='underline'>Season Favorites:</p> Discover the best of the season:
+            Analyze the most consistent and must-own players.
+            Learn from trends and data-driven stats to improve your squad.
+            Access exclusive lists of fan-favorite players and tactics for long-term success.
+          <p className='underline'>League Tables:</p> Track your leagues and dominate your competition:
+            Live League Tables with real-time updates.
+            Monitor your progress and compare your team's performance to others in your mini-league.
+            Tools to help you manage custom leagues effortlessly.
+          <p className='underline'>Premier League Updates:</p> Never miss a beat with up-to-date Premier League content:
+            Stay informed about match schedules, results, and player injuries.
+            Get pre-match and post-match insights to align your transfers and team setups.
+            Tactical breakdowns of key matches that impact FPL scoring.
+          <p className='underline'>Community Features:</p> We believe in the power of the FPL community:
+            Engage with fellow managers to share strategies and tips.
+            Participate in polls, discussions, and challenges to keep the game exciting.
+            Celebrate victories, exchange ideas, and discuss player performances with like-minded fans.
+        </p>
+      </div>
+
+      <div className='p-5'>
+        <p className='font-extrabold text-5xl underline text-red-600'>
+        Our Mission:
+        </p>
+        <p className='text-wrap text-lg'>
+          At FPL Leagues, our goal is to create an engaging and interactive space where FPL managers can thrive. Whether you're a seasoned veteran aiming for the top or a newcomer exploring the world of fantasy football, we are here to help you achieve success.
+        </p>
+      </div>
+      
+      
+      
     </div>
   )
 }
