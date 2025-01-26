@@ -1,11 +1,55 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
-export default function Contact() {
+export default function Contacts() {
   return (
-    <div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, nam repellendus nobis numquam praesentium odio officia accusantium quidem modi totam dolore a dicta optio nemo iure voluptatem facere eligendi. Laudantium culpa porro animi debitis facilis consequuntur vitae alias error molestias ut quo quas distinctio accusantium dolor libero atque temporibus, corporis voluptates nulla voluptatibus quibusdam iste reiciendis deleniti tempore. Officiis nostrum veniam voluptatum vel magni vero, et eveniet, accusamus cum, temporibus eius iste molestiae aut? Nemo fugit corporis similique odio assumenda minus id quibusdam nulla, reiciendis, illo ut corrupti voluptas? Officiis praesentium debitis quas vero sapiente eligendi dolores molestiae modi eius facilis error nam veniam sit incidunt maxime, et ipsa hic perspiciatis eos harum omnis repudiandae enim. Quia repellat ipsam exercitationem nulla? Rerum mollitia illo eum quod excepturi error odit sed placeat ducimus culpa cum officia amet beatae quo aliquam vitae magni cupiditate, natus harum sapiente explicabo! Recusandae est perferendis voluptatibus suscipit odit aliquam, fugit odio mollitia impedit laborum eaque pariatur repellat doloribus corrupti expedita labore delectus molestias laudantium ea quibusdam culpa quidem quas. Suscipit illo nam delectus, est, doloremque recusandae blanditiis eaque earum commodi perspiciatis nostrum officiis molestias placeat praesentium iure voluptas illum? Explicabo doloribus tempore autem ipsa ad mollitia.
-      </p>
+    <div className='flex flex-col items-center justify-center h-screen'>
+
+      <div className='bg-red-600 w-9/12 h-80 p-20 flex justify-center'> {/* This is text head part*/}
+        <p className='font-extrabold text-7xl flex font-serif text-white'>
+          Connect with me Here
+        </p>
+      </div>
+
+      <div className='bg-red-600 w-9/12 p-10 flex justify-center gap-5 '> {/* This is linkings part*/}
+        <button className='hover:bg-green-200 rounded-full w-16 h-8 justify-center flex transition ease-in-out delay-100'>
+            <Link
+              to="https://github.com/5huv0"
+            >
+              <img src="/images/github-logo.png" alt="" />
+            </Link>
+          </button>
+          <button className='hover:bg-green-200 rounded-full w-16 h-8 justify-center flex transition ease-in-out delay-100'>
+            <Link
+              to="https://www.facebook.com/share/1DSDLmcNCB/"
+            >
+              <img src="/images/fb-logo.png" alt="" />
+            </Link>
+          </button>
+          <button className='hover:bg-green-200 rounded-full w-16 h-8 justify-center flex transition ease-in-out delay-100'>
+            <Link
+              to="https://www.instagram.com/5huv_0?igsh=ZDVuMm0wOTBtMnln"
+            >
+              <img src="/images/insta-logo.png" alt="" />
+            </Link>
+          </button>
+          <button className='hover:bg-green-200 rounded-full w-16 h-8 justify-center flex transition ease-in-out delay-100'>
+            <Link
+              to="https://x.com/MdShuvo76030551?t=EYDUmqMZbLgsENpAbjW4Kw&s=09"
+            >
+              <img src="/images/twitter-logo.png" alt="" />
+            </Link>
+          </button>
+          <button className='hover:bg-green-200 rounded-full w-16 h-8 justify-center flex transition ease-in-out delay-100'>
+            <Link
+              to="mailto: md88748874@gmail.com"
+            >
+              <img src="/images/gmail-logo.png" alt="" />
+            </Link>
+          </button>
+      </div>
+
     </div>
   )
 }
+
