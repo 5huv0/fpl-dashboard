@@ -10,7 +10,7 @@ export default function Home(){
                 <div className="h-4/6 flex flex-row">
                     <div className="w-7/12 flex flex-col">
                         <div className="bg-slate-500 h-4/6">
-                            Player of the week
+                            Player of the gameweek
                         </div>
                         <div className="bg-orange-950 h-2/6">
                             Average Point of the gameweek
