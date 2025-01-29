@@ -4,7 +4,7 @@ export default function Home(){
     return(
         <div className="flex">
             <div className="bg-yellow-400 h-screen w-4/12">
-                Total LeaderBoard api call here
+                Total LeaderBoard
             </div>
             <div className="h-screen w-8/12 flex flex-col">
                 <div className="h-4/6 flex flex-row">
