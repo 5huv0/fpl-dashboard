@@ -5,6 +5,8 @@ export default function Home(){
         <div className="flex">
             <div className="bg-yellow-400 h-screen w-4/12">
                 Total LeaderBoard
+
+                {/* https://fantasy.premierleague.com/api/leagues-classic/856056/standings */}
             </div>
             <div className="h-screen w-8/12 flex flex-col">
                 <div className="h-4/6 flex flex-row">
