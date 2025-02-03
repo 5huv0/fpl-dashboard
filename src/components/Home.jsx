@@ -33,7 +33,7 @@
 
 
 
-//ChatGPT
+//using ChatGPT
 
 
 // import React, { useEffect, useState } from "react";
@@ -99,7 +99,7 @@
 
 
 
-//DeepSeek
+// using DeepSeek
 
 // import React, { useEffect, useState } from "react";
 
