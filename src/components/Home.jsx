@@ -1,42 +1,42 @@
 
-//using brain
+// using brain
 
-// import React from "react";
+import React from "react";
 
-// export default function Home(){
-//     return(
-//         <div className="flex">
-//             <div className="bg-yellow-400 h-screen w-4/12">
-//                 Total LeaderBoard
+export default function Home(){
+    return(
+        <div className="flex">
+            <div className="bg-yellow-400 h-screen w-4/12">
+                Total LeaderBoard
 
-//                 {/* https://fantasy.premierleague.com/api/leagues-classic/856056/standings */}
-//             </div>
-//             <div className="h-screen w-8/12 flex flex-col">
-//                 <div className="h-4/6 flex flex-row">
-//                     <div className="w-7/12 flex flex-col">
-//                         <div className="bg-slate-500 h-4/6">
-//                             Player of the gameweek
-//                         </div>
-//                         <div className="bg-orange-950 h-2/6">
-//                             Average Point of the gameweek
-//                         </div>
-//                     </div>
-//                     <div className="bg-blue-700 w-5/12">
-//                         Top of the Week
-//                     </div>
-//                 </div>
-//                 <div className="h-2/6 bg-green-600">
-//                     Total team & Avg points Total & Total points
-//                 </div>
-//             </div>
-//         </div>
-//     )
-// }
-
-
+                {/* https://fantasy.premierleague.com/api/leagues-classic/856056/standings */}
+            </div>
+            <div className="h-screen w-8/12 flex flex-col">
+                <div className="h-4/6 flex flex-row">
+                    <div className="w-7/12 flex flex-col">
+                        <div className="bg-slate-500 h-4/6">
+                            Player of the gameweek
+                        </div>
+                        <div className="bg-orange-950 h-2/6">
+                            Average Point of the gameweek
+                        </div>
+                    </div>
+                    <div className="bg-blue-700 w-5/12">
+                        Top of the Week
+                    </div>
+                </div>
+                <div className="h-2/6 bg-green-600">
+                    Total team & Avg points Total & Total points
+                </div>
+            </div>
+        </div>
+    )
+}
 
 
-//using ChatGPT
+
+
+// using ChatGPT
 
 
 // import React, { useEffect, useState } from "react";
@@ -183,7 +183,7 @@
 
 
 
-//using Qwen2.5max
+// using Qwen2.5max
 
 // import React, { useState, useEffect } from "react";
 
