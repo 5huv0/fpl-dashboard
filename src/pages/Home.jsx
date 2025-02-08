@@ -1,0 +1,72 @@
+import axios from "axios";
+import  { useEffect, useState } from "react";
+
+export default function Home(){
+    const [players , setPlayers] = useState([])
+    const [leagueTitle , setLeagueTitle] = useState("")
+    const fetchLeagueData = async () => {
+        try {
+          const response = await axios.get(
+            "http://localhost:3000/league"
+          );
+          setPlayers(response.data.standings.results);
+          setLeagueTitle(response.data.league.name);
+        } catch (error) {
+          console.error("Error fetching the data:", error);
+        }
+      };
+    
+      useEffect(() => {
+        fetchLeagueData();
+      }, []);
+
+    return(
+        <div className="flex">
+            <div className="bg-yellow-400 h-screen w-4/12">
+            <p>{leagueTitle}</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Team Name</th>
+                        <th>Player Name</th>
+                        <th>Points</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {players.slice(0,15).map((player, index) => (
+                    <tr key={player.id || index}>
+                        <td>{index + 1}</td> {/* Rank is the index + 1 */}
+                        <td>{player.entry_name}</td>
+                        <td>{player.player_name}</td>
+                        <td>{player.event_total}</td>
+                        <td>{player.total}</td>
+                    </tr>
+                ))}
+                </tbody>
+            </table>
+            </div>
+            <div className="h-screen w-8/12 flex flex-col">
+                <div className="h-4/6 flex flex-row">
+                    <div className="w-7/12 flex flex-col">
+                        <div className="bg-slate-500 h-4/6">
+                            Player of the gameweek
+                        </div>
+                        <div className="bg-orange-950 h-2/6">
+                            Average Point of the gameweek
+                        </div>
+                    </div>
+                    <div className="bg-blue-700 w-5/12">
+                        Top of the Week
+                    </div>
+                </div>
+                <div className="h-2/6 bg-green-600">
+                    Total team & Avg points Total & Total points
+                </div>
+            </div>
+        </div>
+    )
+}
+
+
