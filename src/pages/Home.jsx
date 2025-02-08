@@ -1,5 +1,6 @@
 import axios from "axios";
 import  { useEffect, useState } from "react";
+import PlayerOfTheWeek from "../components/home-components/player-of-the-week/PlayerOfTheWeek";
 
 export default function Home(){
     const [players , setPlayers] = useState([])
@@ -19,7 +20,12 @@ export default function Home(){
       useEffect(() => {
         fetchLeagueData();
       }, []);
-
+      
+      const HighestScorer = players.reduce(
+              (prev, current) =>
+                prev.event_total > current.event_total ? prev : current,
+             players[0]
+          );
     return(
         <div className="flex">
             <div className="bg-yellow-400 h-screen w-4/12">
@@ -51,7 +57,7 @@ export default function Home(){
                 <div className="h-4/6 flex flex-row">
                     <div className="w-7/12 flex flex-col">
                         <div className="bg-slate-500 h-4/6">
-                            Player of the gameweek
+                            <PlayerOfTheWeek player={HighestScorer}/>
                         </div>
                         <div className="bg-orange-950 h-2/6">
                             Average Point of the gameweek
