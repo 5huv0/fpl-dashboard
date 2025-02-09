@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function About() {
   return (
     <div className='m-5 font-mono'>
@@ -46,7 +44,7 @@ export default function About() {
             Access exclusive lists of fan-favorite players and tactics for long-term success.
           <p className='underline'>League Tables:</p> Track your leagues and dominate your competition:
             Live League Tables with real-time updates.
-            Monitor your progress and compare your team's performance to others in your mini-league.
+            Monitor your progress and compare your teams performance to others in your mini-league.
             Tools to help you manage custom leagues effortlessly.
           <p className='underline'>Premier League Updates:</p> Never miss a beat with up-to-date Premier League content:
             Stay informed about match schedules, results, and player injuries.
@@ -64,7 +62,7 @@ export default function About() {
         Our Mission:
         </p>
         <p className='text-wrap text-lg'>
-          At FPL Leagues, our goal is to create an engaging and interactive space where FPL managers can thrive. Whether you're a seasoned veteran aiming for the top or a newcomer exploring the world of fantasy football, we are here to help you achieve success.
+          At FPL Leagues, our goal is to create an engaging and interactive space where FPL managers can thrive. Whether youre a seasoned veteran aiming for the top or a newcomer exploring the world of fantasy football, we are here to help you achieve success.
         </p>
       </div>
       
