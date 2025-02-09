@@ -41,7 +41,7 @@ export default function Home(){
                     </tr>
                 </thead>
                 <tbody>
-                {players.slice(0,15).map((player, index) => (
+                {players.slice(0,25).map((player, index) => (
                     <tr key={player.id || index}>
                         <td>{index + 1}</td> {/* Rank is the index + 1 */}
                         <td>{player.entry_name}</td>
@@ -60,15 +60,15 @@ export default function Home(){
                             <PlayerOfTheWeek player={HighestScorer}/>
                         </div>
                         <div className="bg-orange-950 h-2/6">
-                            Average Point of the gameweek
+                            League Owner Point and Team name
                         </div>
                     </div>
                     <div className="bg-blue-700 w-5/12">
-                        Top of the Week
+                        <PlayerOfTheWeek player={HighestScorer}/>
                     </div>
                 </div>
                 <div className="h-2/6 bg-green-600">
-                    Total team & Avg points Total & Total points
+                    League Sponsor Point and Team name
                 </div>
             </div>
         </div>
