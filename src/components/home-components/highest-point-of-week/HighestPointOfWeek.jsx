@@ -1,9 +1,9 @@
-import React from 'react'
+// import React from 'react'
 
-export default function HighestPointOfWeek() {
-  return (
-    <div>
+// export default function HighestPointOfWeek() {
+//   return (
+//     <div>
       
-    </div>
-  )
-}
+//     </div>
+//   )
+// }

@@ -28,6 +28,5 @@ PlayerOfTheWeek.propTypes = {
       event_total: 0,
     },
   };
-  
 
 export default PlayerOfTheWeek

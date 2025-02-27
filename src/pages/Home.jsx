@@ -28,7 +28,7 @@ export default function Home(){
           );
     return(
         <div className="flex">
-            <div className="bg-yellow-400 h-screen w-4/12">
+            <div className="bg-yellow-400 h-screen w-4/12">      {/* Leader Board */}
             <p>{leagueTitle}</p>
             <table>
                 <thead>
@@ -56,19 +56,19 @@ export default function Home(){
             <div className="h-screen w-8/12 flex flex-col">
                 <div className="h-4/6 flex flex-row">
                     <div className="w-7/12 flex flex-col">
-                        <div className="bg-slate-500 h-4/6">
+                        <div className="bg-slate-500 h-4/6"> {/*  Highest Scorer */}
                             <PlayerOfTheWeek player={HighestScorer}/>
                         </div>
-                        <div className="bg-orange-950 h-2/6">
+                        <div className="bg-orange-950 h-2/6"> {/*  League Owner  */}
                             League Owner Point and Team name
                         </div>
                     </div>
-                    <div className="bg-blue-700 w-5/12">
-                        <PlayerOfTheWeek player={HighestScorer}/>
+                    <div className="bg-blue-700 w-5/12">      {/*  PL Table */}
+                        PL Table
                     </div>
                 </div>
-                <div className="h-2/6 bg-green-600">
-                    League Sponsor Point and Team name
+                <div className="h-2/6 bg-green-600">          {/* Individual player search */}
+                    Individual player search
                 </div>
             </div>
         </div>
