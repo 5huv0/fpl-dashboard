@@ -59,8 +59,8 @@ export default function Home(){
                         <div className="bg-slate-500 h-4/6"> {/*  Highest Scorer */}
                             <PlayerOfTheWeek player={HighestScorer}/>
                         </div>
-                        <div className="bg-orange-950 h-2/6"> {/*  League Owner  */}
-                            League Owner Point and Team name
+                        <div className="bg-orange-950 h-2/6"> {/*  Player to watch  */}
+                            Player to watch
                         </div>
                     </div>
                     <div className="bg-blue-700 w-5/12">      {/*  PL Table */}
