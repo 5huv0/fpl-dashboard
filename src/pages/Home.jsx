@@ -1,6 +1,7 @@
 import axios from "axios";
 import  { useEffect, useState } from "react";
 import PlayerOfTheWeek from "../components/home-components/player-of-the-week/PlayerOfTheWeek";
+import PlayerToWatch from "../components/home-components/player-to-watch/PlayerToWatch";
 
 export default function Home(){
     const [players , setPlayers] = useState([])
@@ -60,7 +61,7 @@ export default function Home(){
                             <PlayerOfTheWeek player={HighestScorer}/>
                         </div>
                         <div className="bg-orange-950 h-2/6"> {/*  Player to watch  */}
-                            Player to watch
+                            <PlayerToWatch />
                         </div>
                     </div>
                     <div className="bg-blue-700 w-5/12">      {/*  PL Table */}
