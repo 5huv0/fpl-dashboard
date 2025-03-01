@@ -4,9 +4,9 @@ import rk from "../../../../public/images/rk.jpg"
 import td from "../../../../public/images/td.jpg"
 
 
-export default function PlayerToWatch(player) {
+export default function PlayerToWatch({player}) {
   return (
-    <div className='flex gap-4'>
+    <div className='flex gap-9'>
       <div>
         <img src={ck} alt="" className="size-20"/>
         <p>{player.player_name}</p>

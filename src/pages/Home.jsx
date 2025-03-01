@@ -21,7 +21,11 @@ export default function Home(){
       useEffect(() => {
         fetchLeagueData();
       }, []);
-      
+
+    //   const Shuvo = 
+    //   const Ponkoj = 
+    //   const Titu = 
+
       const HighestScorer = players.reduce(
               (prev, current) =>
                 prev.event_total > current.event_total ? prev : current,
@@ -60,7 +64,7 @@ export default function Home(){
                         <div className="bg-slate-500 h-4/6"> {/*  Highest Scorer */}
                             <PlayerOfTheWeek player={HighestScorer}/>
                         </div>
-                        <div className="bg-orange-950 h-2/6"> {/*  Player to watch  */}
+                        <div className="bg-orange-950 h-3/6 "> {/*  Player to watch  */}
                             <PlayerToWatch />
                         </div>
                     </div>
