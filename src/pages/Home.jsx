@@ -1,12 +1,22 @@
 import axios from "axios";
 import  { useEffect, useState } from "react";
 import PlayerOfTheWeek from "../components/home-components/player-of-the-week/PlayerOfTheWeek";
-import PlayerToWatch from "../components/home-components/player-to-watch/PlayerToWatch";
+import PlayerToWatch1 from "../components/home-components/player-to-watch/PlayerToWatch1";
+import PlayerToWatch2 from "../components/home-components/player-to-watch/PlayerToWatch2";
+import PlayerToWatch3 from "../components/home-components/player-to-watch/PlayerToWatch3";
 
 export default function Home(){
     const [players , setPlayers] = useState([])
     const [leagueTitle , setLeagueTitle] = useState("")
-    // const [idNum , setIdNum] = useState()
+
+    const playerIds = players.map(player => player.id);
+    console.log(playerIds);
+
+    const saju = players.find(player => player.id === 64989035);
+    const toffee = players.find(player => player.id === 34424512);
+    const shuvo = players.find(player => player.id === 29247874);
+
+
     const fetchLeagueData = async () => {
         try {
           const response = await axios.get(
@@ -14,7 +24,6 @@ export default function Home(){
           );
           setPlayers(response.data.standings.results);
           setLeagueTitle(response.data.league.name);
-        //   setIdNum(response.data.players.id)
         } catch (error) {
           console.error("Error fetching the data:", error);
         }
@@ -23,9 +32,6 @@ export default function Home(){
       useEffect(() => {
         fetchLeagueData();
       }, []);
-//  console.log(idNum)
-    //   const Shuvo = 
-
 
       const HighestScorer = players.reduce(
               (prev, current) =>
@@ -66,10 +72,18 @@ export default function Home(){
                             <PlayerOfTheWeek player={HighestScorer}/>
                         </div>
                         <div className="bg-slate-400 h-3/6 p-3 border-4 border-red-600"> {/*  Player to watch  */}
-                            <PlayerToWatch />
+                            <div className="flex justify-center font-extrabold text-3xl underline text-center">
+                                <h2> Players To Watch </h2>
+                            </div>
+                            <div className="flex flex-row p-3 gap-4">
+                                <PlayerToWatch1 player={shuvo}/>
+                                <PlayerToWatch2 player={saju}/>
+                                <PlayerToWatch3 player={toffee}/>
+                            </div>
+                            
                         </div>
                     </div>
-                    <div className="bg-blue-700 w-5/12">      {/*  PL Table */}
+                    <div className="bg-blue-700 w-5/12 ">      {/*  PL Table */}
                         PL Table
                     </div>
                 </div>
