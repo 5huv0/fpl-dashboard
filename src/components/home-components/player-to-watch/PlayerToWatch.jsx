@@ -6,9 +6,9 @@ import td from "../../../../public/images/td.jpg"
 
 export default function PlayerToWatch({player}) {
   return (
-    <div className='flex gap-9'>
+    <div className='flex gap-9 '>
       <div>
-        <img src={ck} alt="" className="size-20"/>
+        <img src={ck} alt="" className="size-20 rounded-3xl"/>
         <p>{player.player_name}</p>
         <p>{player.rank}</p>
         <p>{player.total}</p>
@@ -16,7 +16,7 @@ export default function PlayerToWatch({player}) {
       </div>
 
       <div>
-        <img src={rk} alt="" className="size-20"/>
+        <img src={rk} alt="" className="size-20 rounded-3xl"/>
         <p>{player.player_name}</p>
         <p>{player.rank}</p>
         <p>{player.total}</p>
@@ -24,7 +24,7 @@ export default function PlayerToWatch({player}) {
       </div>
 
       <div>
-        <img src={td} alt="" className="size-20"/>
+        <img src={td} alt="" className="size-20 rounded-3xl"/>
         <p>{player.player_name}</p>
         <p>{player.rank}</p>
         <p>{player.total}</p>
@@ -32,7 +32,7 @@ export default function PlayerToWatch({player}) {
       </div>
 
       <div>
-        <img src={td} alt="" className="size-20"/>
+        <img src={td} alt="" className="size-20 rounded-3xl"/>
         <p>{player.player_name}</p>
         <p>{player.rank}</p>
         <p>{player.total}</p>

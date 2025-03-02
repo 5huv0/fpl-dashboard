@@ -1,11 +1,12 @@
-import avatar1 from "../../../../public/images/avatar1.png"
+// import avatar1 from "../../../../public/images/avatar1.png"
+import rk from "../../../../public/images/rk.jpg"
 import PropTypes from 'prop-types';
 
 const PlayerOfTheWeek = ({ player }) => {
     
   return (
-    <div>
-      <img src={avatar1} alt="avatar1" className="size-20"/>
+    <div className="flex flex-col items-center font-mono font-extrabold">
+      <img src={rk} alt="avatar1" className="size-20 rounded-3xl" />
       <p>{player.player_name}</p>
       <p>{player.entry_name}</p>
       <p>{player.event_total}</p>
