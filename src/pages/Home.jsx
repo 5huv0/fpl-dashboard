@@ -69,13 +69,14 @@ export default function Home(){
                 <div className="h-4/6 flex flex-row">
                     <div className="w-7/12 flex flex-col justify-center items-center">
                         <div className="bg-slate-500 m-3 p-4 border-8 border-indigo-600"> {/*  Highest Scorer */}
+                            <h2 className="font-extrabold text-2xl underline text-center"> Top Of The Week </h2>
                             <PlayerOfTheWeek player={HighestScorer}/>
                         </div>
                         <div className="bg-slate-400 h-3/6 p-3 border-4 border-red-600"> {/*  Player to watch  */}
                             <div className="flex justify-center font-extrabold text-3xl underline text-center">
                                 <h2> Players To Watch </h2>
                             </div>
-                            <div className="flex flex-row p-3 gap-4">
+                            <div className="flex flex-row p-2 gap-4">
                                 <PlayerToWatch1 player={shuvo}/>
                                 <PlayerToWatch2 player={saju}/>
                                 <PlayerToWatch3 player={toffee}/>
@@ -83,11 +84,11 @@ export default function Home(){
                             
                         </div>
                     </div>
-                    <div className="bg-blue-700 w-5/12 ">      {/*  PL Table */}
+                    <div className="bg-blue-700 w-5/12 border-4 border-red-600">      {/*  PL Table */}
                         PL Table
                     </div>
                 </div>
-                <div className="h-2/6 bg-green-600">          {/* Individual player search */}
+                <div className="h-2/6 bg-green-600 m-2 border-4 border-red-600">          {/* Individual player search */}
                     Individual player search
                 </div>
             </div>
