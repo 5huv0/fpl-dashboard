@@ -23,8 +23,7 @@ export default function Home(){
       }, []);
 
     //   const Shuvo = 
-    //   const Ponkoj = 
-    //   const Titu = 
+
 
       const HighestScorer = players.reduce(
               (prev, current) =>
