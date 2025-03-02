@@ -4,8 +4,8 @@ import ck from "../../../../public/images/ck.jpg"
 
 export default function PlayerToWatch({player}) {
   return (
-    <div className='flex gap-9 '>
-      <div className='items-center'>
+    <div className='gap-9'>
+      <div className='flex flex-col justify-center items-center'>
         <img src={ck} alt="" className="size-20 rounded-3xl"/>
         <p>Name :{player.player_name}</p>
         <p>Rank :{player.rank}</p>

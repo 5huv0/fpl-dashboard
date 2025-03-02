@@ -5,7 +5,7 @@ import td from "../../../../public/images/td.jpg"
 export default function PlayerToWatch({player}) {
   return (
     <div className='flex gap-9 '>
-      <div>
+      <div className='flex flex-col justify-center items-center'>
         <img src={td} alt="" className="size-20 rounded-3xl"/>
         <p>Name :{player.player_name}</p>
         <p>Rank :{player.rank}</p>

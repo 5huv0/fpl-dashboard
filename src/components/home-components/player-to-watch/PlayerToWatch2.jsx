@@ -6,7 +6,7 @@ import rk from "../../../../public/images/rk.jpg"
 export default function PlayerToWatch({player}) {
   return (
     <div className='flex gap-9 '>
-      <div>
+      <div className='flex flex-col justify-center items-center'>
         <img src={rk} alt="" className="size-20 rounded-3xl"/>
         <p>Name :{player.player_name}</p>
         <p>Rank :{player.rank}</p>
