@@ -1,9 +1,9 @@
-import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
+// import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
-    <div className='bg-red-600 w-full bottom-0 flex justify-around'>
+    <div className='w-full bottom-0 flex justify-around'>
       <div className='flex flex-col items-start'>
         <p className='font-bold font-mono text-black text-4xl p-3'>
             FPL Leagues
@@ -14,36 +14,36 @@ export default function Footer() {
       </div>
       <div>
         <div className='flex flex-col font-bold font-mono p-3 m-2'> {/* This is buttons section */}
-            <NavLink
+            <Link
                 to="/rizzgen"
-                className=' text-black  rounded-xl hover:underline'
+                className=' text-black hover:bg-white text-center rounded-xl '
                 >
                 Top of the Week
-                </NavLink>
-                <NavLink
+                </Link>
+                <Link
                 to="/favourites"
-                className=' text-black  rounded-xl hover:underline'
+                className=' text-black  hover:bg-white text-center  rounded-xl '
                 >
                 Top of the season
-                </NavLink>
-                <NavLink
+                </Link>
+                <Link
                 to="/addrizz"
-                className=' text-black  rounded-xl hover:underline'
+                className=' text-black  hover:bg-white text-center rounded-xl '
                 >
                 PL Table
-                </NavLink>
-                <NavLink
+                </Link>
+                <Link
                 to="/features"
-                className=' text-black  rounded-xl hover:underline'
+                className=' text-black  hover:bg-white text-center rounded-xl '
                 >
                  League Table
-                </NavLink>
-                <NavLink
+                </Link>
+                <Link
                 to="/contacts"
-                className=' text-black rounded-xl hover:underline'
+                className=' text-black  hover:bg-white text-center rounded-xl '
                 >
                 Contacts
-            </NavLink>
+            </Link>
         </div>
       </div>
     </div>

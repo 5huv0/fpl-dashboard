@@ -1,14 +1,15 @@
-import React from 'react'
+// import React from 'react'
 import {Link, NavLink} from 'react-router-dom'
 
 export default function Navbar() {
   return (
-    <nav className='bg-red-600 flex flex-row justify-between font-mono'>
+    <nav className='flex flex-row justify-between font-mono'>
        <div className='flex gap-6 justify-center items-center'>
             <Link to="/">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXJFgaMD84uTvZG3La1pjYzKtvwy7oI-Nn6g&s" alt="" className='size-20'/>
+                {/* <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXJFgaMD84uTvZG3La1pjYzKtvwy7oI-Nn6g&s" alt="" className='size-20'/> */}
+                <img src="../../public/images/site-logo.jpg" alt="" className='size-16'/>
             </Link>
-            <p className='font-bold text-3xl text-yellow-300'>
+            <p className='font-bold text-3xl text-white'>
                 FPL-LEAGUES
             </p>
        </div>
