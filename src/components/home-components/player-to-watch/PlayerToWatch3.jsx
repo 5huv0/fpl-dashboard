@@ -7,10 +7,10 @@ export default function PlayerToWatch({player}) {
     <div className='flex gap-9 '>
       <div className='flex flex-col justify-center items-center'>
         <img src={td} alt="" className="size-20 rounded-3xl"/>
-        <p>Name :{player.player_name}</p>
-        <p>Rank :{player.rank}</p>
-        <p>Total :{player.total}</p>
-        <p>Team :{player.entry_name}</p>
+        <p><span className="text-red-700 font-bold font-mono">Name:</span>{player.player_name}</p>
+        <p><span className="text-red-700 font-bold font-mono">Rank:</span>{player.rank}</p>
+        <p><span className="text-red-700 font-bold font-mono">Total:</span>{player.total}</p>
+        <p><span className="text-red-700 font-bold font-mono">Team:</span>{player.entry_name}</p>
       </div>
     </div>
   )

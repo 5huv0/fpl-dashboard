@@ -7,9 +7,9 @@ const PlayerOfTheWeek = ({ player }) => {
   return (
     <div className="flex flex-col items-center font-mono font-extrabold">
       <img src={rk} alt="avatar1" className="size-20 rounded-3xl" />
-      <p><span className="text-slate-900">Name:</span> {player.player_name}</p>
-      <p><span>Team-Name:</span> {player.entry_name}</p>
-      <p><span>Total:</span> {player.event_total}</p>
+      <p><span className="text-red-700">Name:</span> {player.player_name}</p>
+      <p><span className="text-red-700">Team-Name:</span> {player.entry_name}</p>
+      <p><span className="text-red-700">Total:</span> {player.event_total}</p>
     </div>
   )
 }

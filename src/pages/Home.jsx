@@ -41,7 +41,7 @@ export default function Home(){
     return(
         <div className="flex">
             <div className="bg-slate-400 h-screen w-4/12 p-3 m-3 border-4 border-green-600">      {/* Leader Board */}
-                <p className="font-serif text-3xl font-extrabold justify-center text-center underline">{leagueTitle}</p>
+                <p className="font-serif text-blue-700 text-3xl font-extrabold justify-center text-center underline">{leagueTitle}</p>
                 <table className="text-sm font-bold font-mono text-center">
                     <thead>
                         <tr className="border-2">
@@ -84,11 +84,11 @@ export default function Home(){
                             
                         </div>
                     </div>
-                    <div className="bg-blue-700 w-5/12 border-4 border-red-600">      {/*  PL Table */}
+                    <div className="bg-slate-500 w-5/12 border-4 border-gray-600 m-2">      {/*  PL Table */}
                         PL Table
                     </div>
                 </div>
-                <div className="h-2/6 bg-green-600 m-2 border-4 border-red-600">          {/* Individual player search */}
+                <div className="h-2/6 bg-slate-500 m-2 border-4 border-indigo-800 p-3 text-center">          {/* Individual player search */}
                     Individual player search
                 </div>
             </div>
