@@ -4,6 +4,7 @@ import PlayerOfTheWeek from "../components/home-components/player-of-the-week/Pl
 import PlayerToWatch1 from "../components/home-components/player-to-watch/PlayerToWatch1";
 import PlayerToWatch2 from "../components/home-components/player-to-watch/PlayerToWatch2";
 import PlayerToWatch3 from "../components/home-components/player-to-watch/PlayerToWatch3";
+import IndividualPlayerSearch from "../components/home-components/individual-player-search/IndividualPlayerSearch"
 
 export default function Home(){
     const [players , setPlayers] = useState([])
@@ -89,7 +90,7 @@ export default function Home(){
                     </div>
                 </div>
                 <div className="h-2/6 bg-slate-500 m-2 border-4 border-indigo-800 p-3 text-center">          {/* Individual player search */}
-                    Individual player search
+                    <IndividualPlayerSearch />
                 </div>
             </div>
         </div>
