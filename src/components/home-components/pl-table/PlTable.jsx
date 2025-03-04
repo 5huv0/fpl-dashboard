@@ -1,8 +1,8 @@
 
-export default function PlTable() {
-  return (
-    <div>
+// export default function PlTable() {
+//   return (
+//     <div>
       
-    </div>
-  )
-}
+//     </div>
+//   )
+// }
