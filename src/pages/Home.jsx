@@ -69,7 +69,7 @@ export default function Home(){
             <div className="h-screen w-8/12 flex flex-col">
                 <div className="h-4/6 flex flex-row">
                     <div className="w-7/12 flex flex-col justify-center items-center">
-                        <div className="bg-slate-500 m-3 p-4 border-8 border-indigo-600"> {/*  Highest Scorer */}
+                        <div className="bg-slate-500 m-3 p-3 border-8 border-indigo-600"> {/*  Highest Scorer */}
                             <h2 className="font-extrabold text-2xl underline text-center"> Top Of The Week </h2>
                             <PlayerOfTheWeek player={HighestScorer}/>
                         </div>

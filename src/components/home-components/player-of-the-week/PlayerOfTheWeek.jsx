@@ -10,6 +10,7 @@ const PlayerOfTheWeek = ({ player }) => {
       <p><span className="text-red-700">Name:</span> {player.player_name}</p>
       <p><span className="text-red-700">Team-Name:</span> {player.entry_name}</p>
       <p><span className="text-red-700">Total:</span> {player.event_total}</p>
+      {/* <p><span className="text-red-700">Rank:</span> {player.rank}</p> */}
     </div>
   )
 }
@@ -19,6 +20,7 @@ PlayerOfTheWeek.propTypes = {
       player_name: PropTypes.string.isRequired,
       entry_name: PropTypes.string.isRequired,
       event_total: PropTypes.number.isRequired, 
+      // rank : PropTypes.number.isRequired
     }).isRequired,
   };
 
@@ -27,6 +29,7 @@ PlayerOfTheWeek.propTypes = {
       player_name: "Unknown",
       entry_name: "Unknown Team",
       event_total: 0,
+      // rank : "Unknown"
     },
   };
 
