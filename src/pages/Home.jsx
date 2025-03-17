@@ -10,6 +10,9 @@ export default function Home(){
     const [players , setPlayers] = useState([])
     const [leagueTitle , setLeagueTitle] = useState("")
 
+    // const [title , setTitle] = useState("")
+    // const [genre , setGenre] = useState("")
+
     const playerIds = players.map(player => player.id);
     console.log(playerIds);
 
@@ -18,7 +21,7 @@ export default function Home(){
     const shuvo = players.find(player => player.id === 29247874);
 
 
-    const fetchLeagueData = async () => {
+    const fetchLeagueData = async () => { //This is for fpl api
         try {
           const response = await axios.get(
             "http://localhost:3000/league"
@@ -29,6 +32,17 @@ export default function Home(){
           console.error("Error fetching the data:", error);
         }
       };
+
+    //   const fetchGameData = async () => { // This is for games api
+    //     try{
+    //         const response = await axios.get(" https://www.freetogame.com/api/games");
+    //         setGenre(response.data.genre)
+    //         setTitle(response.data.title)
+    //     }
+    //     catch(error){
+    //         console.log("Error fetching data:", error)
+    //     }
+    // }
     
       useEffect(() => {
         fetchLeagueData();
@@ -86,7 +100,7 @@ export default function Home(){
                         </div>
                     </div>
                     <div className="bg-slate-500 w-5/12 border-4 border-gray-600 m-2">      {/*  PL Table */}
-                        PL Table
+                       Free Games and Links
                     </div>
                 </div>
                 <div className="h-2/6 bg-slate-500 m-2 border-4 border-indigo-800 p-3 text-center">          {/* Individual player search */}
