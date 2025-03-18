@@ -5,13 +5,11 @@ import PlayerToWatch1 from "../components/home-components/player-to-watch/Player
 import PlayerToWatch2 from "../components/home-components/player-to-watch/PlayerToWatch2";
 import PlayerToWatch3 from "../components/home-components/player-to-watch/PlayerToWatch3";
 import IndividualPlayerSearch from "../components/home-components/individual-player-search/IndividualPlayerSearch"
+// import FreeGames from "../components/home-components/free-games/FreeGames";
 
 export default function Home(){
     const [players , setPlayers] = useState([])
     const [leagueTitle , setLeagueTitle] = useState("")
-
-    // const [title , setTitle] = useState("")
-    // const [genre , setGenre] = useState("")
 
     const playerIds = players.map(player => player.id);
     console.log(playerIds);
@@ -32,17 +30,6 @@ export default function Home(){
           console.error("Error fetching the data:", error);
         }
       };
-
-    //   const fetchGameData = async () => { // This is for games api
-    //     try{
-    //         const response = await axios.get(" https://www.freetogame.com/api/games");
-    //         setGenre(response.data.genre)
-    //         setTitle(response.data.title)
-    //     }
-    //     catch(error){
-    //         console.log("Error fetching data:", error)
-    //     }
-    // }
     
       useEffect(() => {
         fetchLeagueData();
@@ -100,7 +87,7 @@ export default function Home(){
                         </div>
                     </div>
                     <div className="bg-slate-500 w-5/12 border-4 border-gray-600 m-2">      {/*  PL Table */}
-                       Free Games and Links
+                       {/* <FreeGames /> */}
                     </div>
                 </div>
                 <div className="h-2/6 bg-slate-500 m-2 border-4 border-indigo-800 p-3 text-center">          {/* Individual player search */}
